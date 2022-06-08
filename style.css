@@ -1,0 +1,241 @@
+body{
+    font: bold 1em "trebuchet ms", "helvetica", sans-serif;
+    background: url(imagens/fundo.png) repeat-x;
+}
+#header{
+    width: 750px;
+    margin: 0 auto;
+}
+#header-top{
+    margin-top: 0px;
+    position: relative;
+    bottom: 10px;
+    height: 165px;
+    background: url(imagens/detalhe-topo.png) no-repeat top right;
+}
+#header-top > h1{
+    background: url(imagens/logo.png) no-repeat top left;
+    margin-top: 20px;
+    height: 160px;
+    text-indent: -30000px;
+}
+#header>#header-menu{
+    list-style: none;
+    float: left;
+    position: relative;
+    bottom: 50px;
+    right: 25px;
+    border: 2px ridge #880228;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+#header>#header-menu>li{
+    display: flex;
+    float: left;
+    background: #b10333;
+    height: 40px;
+}
+#header>#header-menu>li>a{
+    display: block;
+    padding: 10px 16px 12px;
+    line-height: 40px;
+    height: 40px;
+    color: aliceblue;
+    font: bold 17px "trebuchet ms", "helvetica", sans-serif;
+    background: url(imagens/divisor.png) repeat-y top left;
+}
+body>#header>#header-menu>li>a.first{
+    background: none;
+}
+#header>#header-menu a:hover{
+    color: #69001d;
+}
+.clear{
+    clear: both;
+}
+.index>#header>#header-menu>#index, .brasil>#header>#header-menu>#brasil, .internacional>#header>#header-menu>#internacional, .economia>#header>#header-menu>#economia, .saude>#header>#header-menu>#saude, .ciencia>#header>#header-menu>#ciencia, .fotos>#header>#header-menu>#fotos{
+     color: #fff;
+     background-color: #de003e;
+}
+
+/********************************************************************/
+#content{
+    margin-top: 30px;
+    font: bold 1em "trebuchet ms", "helvetica", sans-serif;
+    width: 800px;
+    margin: 20px auto;
+    
+}
+/***********Tres Colunas*********/
+#tres-colunas #primario{
+    width: 280px;
+    float: left;
+    margin: 0 10px 20px 200px;
+}
+#tres-colunas #primario .caixa h3, #tres-colunas #secundario .caixa h3, #duas-colunas #primario .caixa h3, #uma-coluna #primario .caixa h3{
+    display:block;
+    background: #de003e;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    width: fit-content;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+#tres-colunas #primario .caixa div, #tres-colunas #secundario .caixa div, #tres-colunas .caixa .caixa-noticias, #duas-colunas #primario .caixa div, #uma-coluna #primario .caixa div, #duas-colunas .caixa .caixa-noticias, #uma-coluna .caixa .caixa-noticias{
+    background-color: #fff;
+    padding: 3px;
+    margin: 5px; 
+}
+#tres-colunas #primario .caixa img, #tres-colunas #secundario .caixa img, #duas-colunas #primario .caixa img, #uma-coluna #primario .caixa img{
+    width: 100%;
+}
+#tres-colunas #primario .caixa a, #tres-colunas #secundario .caixa a, #duas-colunas #primario .caixa a, #uma-coluna #primario .caixa a{
+    color: #c00339;
+    margin-top: 100px;
+    text-decoration: underline;
+}
+#tres-colunas #primario .caixa a:hover, #tres-colunas #secundario .caixa a:hover, #duas-colunas #primario .caixa a:hover, #uma-coluna #primario .caixa a:hover{
+    color: #fff;
+    background: #c00339;;
+    text-decoration: none;
+}
+
+#tres-colunas #primario .caixa .caixa-noticias img,
+#tres-colunas #secundario .caixa .caixa-noticias img,
+#duas-colunas #primario .caixa .caixa-noticias img,
+#uma-coluna #primario .caixa .caixa-noticias img{
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+#tres-colunas .caixa .caixa-noticias h4,
+#duas-colunas .caixa .caixa-noticias h4,
+#uma-coluna .caixa .caixa-noticias h4{
+    text-transform: uppercase;
+    color: #64a6f1;
+    padding: 2px;
+    margin-left: 85px;
+}
+#tres-colunas #primario .caixa .caixa-noticias a,
+#tres-colunas #secundario .caixa .caixa-noticias a{
+    font: bold 12px "trebuchet ms", "helvetica", sans-serif;
+    color: rgb(61, 60, 60);
+    text-decoration: none;
+}
+#duas-colunas #primario .caixa .caixa-noticias a{
+    font: bold 16px "trebuchet ms", "helvetica", sans-serif;
+    color: rgb(61, 60, 60);
+    text-decoration: none;
+}
+#uma-coluna #primario .caixa .caixa-noticias a{
+    font: bold 19px "trebuchet ms", "helvetica", sans-serif;
+    color: rgb(61, 60, 60);
+    text-decoration: none;
+}
+#tres-colunas .caixa .caixa-noticias a p{
+    margin-left: 83px
+}
+#tres-colunas .caixa .caixa-noticias li,
+#duas-colunas .caixa .caixa-noticias li,
+#uma-coluna .caixa .caixa-noticias li{
+    padding: 5px;
+    border-top: 1px solid #a1a1a1;
+}
+#tres-colunas .caixa .caixa-noticias li.primeiro,
+#duas-colunas .caixa .caixa-noticias li.primeiro,
+#uma-coluna .caixa .caixa-noticias li.primeiro{
+    padding: 5px;
+    border-top: none;
+}
+#tres-colunas .caixa .caixa-noticias li:hover,
+#duas-colunas .caixa .caixa-noticias li:hover,
+#uma-coluna .caixa .caixa-noticias li:hover{
+    background: rgba(231, 231, 231, 0.938);
+}
+
+
+
+
+#tres-colunas #secundario{
+    width: 280px;
+    float: left;
+    margin: 0 15px 20px 10px;
+}
+/********************/
+#duas-colunas #primario{
+    width: 555px;
+    float: left;
+    margin: 0 30px 20px 210px;
+}
+/********************/
+#uma-coluna #primario{
+    width: 750px;
+    float: left;
+    margin-bottom: 20px;
+}
+/**********Menu Lateral**********/
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 10px 20px -795px;
+}
+
+.caixa{
+    margin-bottom: 10px;
+    padding: 5px 0;
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+}
+.caixa h2{
+    color: #fff;
+    background: #294c71;
+    padding: 5px;
+    font-size: 1.1em;
+}
+.caixa .conteudo-caixa{
+    padding: 5px 10px;
+    margin: 5px 5px 0px;
+    background: #fff;
+}
+#lateral ul a{
+    display: block;
+    font-size: 0.9em;
+    line-height: 30px;
+    color: #000;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover{
+    color: #a1a1a1;
+    padding-left: 20px;
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+}
+label{
+    display: block;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+#lateral .newsletter input{
+    width: 135px;
+    margin-top: 5px;
+    padding: 5px;
+}
+#lateral .caixa .newsletter input.submit{
+    width: 90px;
+    color: #fff;
+    background-color: #de003e;
+    border: 1px ridge black ;
+    font-weight: bold;
+}
+#lateral .caixa .newsletter input.submit:hover{
+    color: #69001d;
+}
+
+/**********Rodape**********/
+#rodape{
+    color: #fff;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    background: #294c71;
+    padding: 20px;
+    font: bold 1em "trebuchet ms", "helvetica", sans-serif;
+}
